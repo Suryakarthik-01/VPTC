@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Course Navigation */
+.course-nav {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.separator {
+    margin: 0 5px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212529;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    background-color: black;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+/* Last watched overlay */
+.last-watched-overlay {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(33, 37, 41, 0.75);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Python title overlay */
+.video-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.video-title {
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: -20px;
+}
+
+.programming-text {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.learn-python {
+    border-top: 2px solid #ffc107;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+/* Video Controls */
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 15px;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.control-button:hover {
+    opacity: 1;
+}
+
+.time-display {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.volume-control {
+    margin-left: auto;
+}
+
+/* Progress Section */
+.progress-section {
+    padding: 20px 15px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.progress-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progress-percentage {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Progress Stats */
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Progress Info */
+.progress-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.info-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: #e6f3ff;
+    color: #007bff;
+}
+
+.green {
+    background-color: #e6fff0;
+    color: #28a745;
+}

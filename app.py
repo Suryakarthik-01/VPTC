@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import json
 from datetime import datetime
+import os 
 
 app = Flask(__name__)
 DATA_FILE = 'video_progress.json'
@@ -65,4 +66,5 @@ def update_progress(user_id, video_id):
     return jsonify({'message': 'Progress updated successfully'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  
+    app.run(host='0.0.0.0', port=port)
